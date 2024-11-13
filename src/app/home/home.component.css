@@ -1,0 +1,6 @@
+/* Optional: Custom CSS for more control */
+.navbar .ml-auto {
+    position: absolute;
+    right: 20px; /* Adjust this value as needed */
+    top: 10px; /* Adjust this value as needed */
+}

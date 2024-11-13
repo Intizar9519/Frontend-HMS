@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Sharda Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+       
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="/appointmentlist">Back</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="container">
+    <h2 class="text-center">Add New Appointment</h2>
+    <form (ngSubmit)="onSubmit()">
+        <br>
+        <div class="form-group">
+           <label>Name</label>
+           <input class="form-control" [(ngModel)]="appointment.name"  type="text" id="name" name="name" placeholder="Enter Name"/>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Age</label>
+            <input class="form-control" [(ngModel)]="appointment.age"  type="text" id="age" name="age" placeholder="Enter Age"/>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Symtomps</label>
+            <input class="form-control" [(ngModel)]="appointment.symptoms"  type="text" id="symtomps" name="symtomps" placeholder="Enter Symtomps"/>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Number</label>
+            <input class="form-control" [(ngModel)]="appointment.number"  type="text" id="number" name="number" placeholder="Enter Number"/>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Add</button>
+    </form>
+</div>
